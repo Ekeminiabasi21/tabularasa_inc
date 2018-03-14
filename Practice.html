@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice</title>
+</body>
+<h1> Your Details </h1>
+<div>
+    <input type="text" name="" placeholder="Enter your name here" class="name">
+    <br />
+    <br />
+     <input type="text" name="" placeholder="Enter your D.o.b" class="dateOfBirth">
+     <br />
+     <br />
+     
+
+     <input type="text" name="" placeholder="Enter your age" class="age">
+     <br />
+     <br />
+
+
+     <input type="text" name="" placeholder="Enter your Nationality" class="nationality">
+     <br />
+     <br />
+
+
+     <input type="text" name="" placeholder="Enter your phone number" class="phoneNumber">
+     <br />
+     <br />
+     <input type="text" name="" placeholder="Enter your email address" class="email">
+
+</div>
+
+<button class="button" onclick="submit()"> submit </button>
+<p class="finalDetails"></p>
+
+<script>
+
+    function submit() {
+        var name = document.querySelector('.name');
+        console.log(name.value)
+    
+        var name1 = document.querySelector('.dateOfBirth');
+        console.log(name1.value)
+
+        var name2 = document.querySelector('.age');
+        console.log(name2.value)
+
+        var name3 = document.querySelector('.nationality');
+        console.log(name3.value)
+
+        var name4 = document.querySelector('.phoneNumber');
+        console.log(name4.value)
+
+        var name5 = document.querySelector('.email');
+        console.log(name5.value)
+
+    console.log('');
+    console.log('');
+    console.log('');
+    
+    var username;
+    username = name.value + "123";
+
+    var password;
+    password = "010" + name2.value + "020";
+
+    document.querySelector('.finalDetails').innerHTML = "Welcome Mr/Mrs " +name.value+ ". Your Username is " +username+ " and you password is " +password
+
+    }
+    </script>
+</body>
+</html>
